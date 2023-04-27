@@ -55,32 +55,14 @@
     </nav>
 
     <main class="container text-bg-secondary p-3">
-        <div class="row mt-2">
-            <div class="row">
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Nome do jogo" aria-label="Nome do jogo">
-                </div>
-                <div class="col">
-                    <input type="number" class="form-control" placeholder="Valor" aria-label="Valor">
-                </div>
-                <div class="col-4">
-                    <select class="form-select" aria-label="Selecione a categoria">
-                        <option selected>Selecione o estilo</option>
-                        <option value="1">Ação</option>
-                        <option value="2">Aventura</option>
-                        <option value="3">Esportes</option>
-                        <option value="4">Indie</option>
-                        <option value="5">Luta</option>
-                        <option value="6">Terror</option>
-                    </select>
-                </div>
-                <div class="col">
-                    <button type="button" class="btn btn-primary">Salvar</button>
-                </div>
-            </div>
-        </div>
 
-        <div class="row grid gap-2 mt-3">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Cadastrar Jogo
+        </button>
+
+        <!-- <div class="row mx-auto my-2 g-3">-->
+        <div id="jogos" class="row mx-auto my-2 g-3">
             <div class="card col-lg-3 col-md-6 col-sm-12 text-bg-dark p-3" id="jogo-1">
                 <div class="card-header" id="titulo-jogo">
                     The Last of Us - Part II
@@ -177,6 +159,54 @@
             </div>
         </div>
     </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Cadastrar Jogo</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mt-2 g-3">
+
+                        <div class="col-12">
+                            <input id="nome" type="text" class="form-control" placeholder="Nome do jogo"
+                                aria-label="Nome do jogo">
+                        </div>
+
+                        <div class="col-12">
+                            <input id="descricao" type="text" class="form-control" placeholder="Descrição"
+                                aria-label="Descrição">
+                        </div>
+                        <div class="col-12">
+                            <input id="valor" type="number" class="form-control" placeholder="Valor" aria-label="Valor">
+                        </div>
+                        <div class="col-12">
+                            <select id="estilo" class="form-select" aria-label="Selecione o estilo">
+                                <option selected>Selecione o estilo</option>
+                                <option value="Ação">Ação</option>
+                                <option value="Aventura">Aventura</option>
+                                <option value="Esportes">Esportes</option>
+                                <option value="Indie">Indie</option>
+                                <option value="Luta">Luta</option>
+                                <option value="Terror">Terror</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button id="salvar" type="button" class="btn btn-primary">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="./js/crud.js"></script>
+
 </body>
 
 </html>
