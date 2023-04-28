@@ -4,28 +4,3 @@
     font-size: 120%;
     font-weight: 500;
 }
-
-#jogo-1{
-    background-image: url('../assets/images/ellie-2.jpg');
-    background-size: cover;
-}
-
-#jogo-2{
-    background-image: url('../assets/images/Kratos.jpg');
-    background-size: cover;
-}
-
-#jogo-3{
-    background-image: url('../assets/images/Jin-Sakai.jpg');
-    background-size: cover;
-}
-
-#jogo-4{
-    background-image: url('../assets/images/aloy2.jpg');
-    background-size: cover;
-}
-
-#jogo-5{
-    background-image: url('../assets/images/caçador.jpg');
-    background-size: cover;
-}

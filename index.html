@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Epic Task</title>
+    <title>Playstation Ex-clusives</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
@@ -13,6 +13,55 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        div {
+            background-size: cover;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding: 0%;
+        }
+
+        #jogo-1 {
+            background-image: url('../assets/images/ellie-2.jpg');
+        }
+
+        #jogo-2 {
+            background-image: url('../assets/images/Kratos.jpg');
+        }
+
+        #jogo-3 {
+            background-image: url('../assets/images/Jin-Sakai.jpg');
+        }
+
+        #jogo-4 {
+            background-image: url('../assets/images/aloy2.jpg');
+        }
+
+        #jogo-5 {
+            background-image: url('../assets/images/caçador.jpg');
+        }
+
+        #platina{
+            color: #66e8ff;
+        }
+
+        #ouro{
+            color: gold;
+        }
+
+        #prata{
+            color: silver;
+        }
+
+        #bronze{
+            color: rgb(223, 158, 73);
+        }
+    </style>
 </head>
 
 <body class="bg-dark">
@@ -64,11 +113,20 @@
         <!-- <div class="row mx-auto my-2 g-3">-->
         <div id="jogos" class="row mx-auto my-2 g-3">
             <div class="card col-lg-3 col-md-6 col-sm-12 text-bg-dark p-3" id="jogo-1">
+
                 <div class="card-header" id="titulo-jogo">
                     The Last of Us - Part II
                 </div>
                 <div class="card-body">
                     <p class="card-text">Viva a jornada de vingança de Ellie Williams.</p>
+                    <p>
+                    <ul>
+                        <li><i class="bi bi-trophy-fill" id="platina"> 1</i></li>
+                        <li><i class="bi bi-trophy-fill" id="ouro"> 7</i></li>
+                        <li><i class="bi bi-trophy-fill" id="prata"> 8</i></li>
+                        <li><i class="bi bi-trophy-fill" id="bronze"> 10</i></li>
+                    </ul>
+                    </p>
                     <span class="badge text-bg-warning">R$ 299,99</span>
                     <p class="card-text">Edição Standard</p>
                 </div>
@@ -80,6 +138,7 @@
                         <i class="bi bi-x"></i>
                     </a>
                 </div>
+
             </div>
 
             <div class="card col-lg-3 col-md-6 col-sm-12 text-bg-dark p-3" id="jogo-2">
@@ -88,6 +147,14 @@
                 </div>
                 <div class="card-body">
                     <p class="card-text">Viva a aventura de Kratos e Atreus na mitologia nórdica.</p>
+                    <p>
+                        <ul>
+                            <li><i class="bi bi-trophy-fill" id="platina"> 1</i></li>
+                            <li><i class="bi bi-trophy-fill" id="ouro"> 4</i></li>
+                            <li><i class="bi bi-trophy-fill" id="prata"> 15</i></li>
+                            <li><i class="bi bi-trophy-fill" id="bronze"> 16</i></li>
+                        </ul>
+                        </p>
                     <span class="badge text-bg-warning">R$ 350,00</span>
                     <p class="card-text">Edição Deluxe</p>
                 </div>
@@ -107,6 +174,14 @@
                 </div>
                 <div class="card-body">
                     <p class="card-text">Explore a Ilha de Tsushima com o samurai Jin Sakai.</p>
+                    <p>
+                        <ul>
+                            <li><i class="bi bi-trophy-fill" id="platina"> 1</i></li>
+                            <li><i class="bi bi-trophy-fill" id="ouro"> 4</i></li>
+                            <li><i class="bi bi-trophy-fill" id="prata"> 13</i></li>
+                            <li><i class="bi bi-trophy-fill" id="bronze"> 59</i></li>
+                        </ul>
+                        </p>
                     <span class="badge text-bg-warning">R$ 99,99</span>
                     <p class="card-text">Edição do Diretor</p>
                 </div>
@@ -126,6 +201,14 @@
                 </div>
                 <div class="card-body">
                     <p class="card-text">Explore o Oeste Proibido com Aloy para impedir novas ameaças misteriosas.</p>
+                    <p>
+                        <ul>
+                            <li><i class="bi bi-trophy-fill" id="platina"> 1</i></li>
+                            <li><i class="bi bi-trophy-fill" id="ouro"> 2</i></li>
+                            <li><i class="bi bi-trophy-fill" id="prata"> 10</i></li>
+                            <li><i class="bi bi-trophy-fill" id="bronze"> 67</i></li>
+                        </ul>
+                        </p>
                     <span class="badge text-bg-warning">R$ 149,99</span>
                     <p class="card-text">Edição Standard</p>
                 </div>
@@ -145,6 +228,14 @@
                 </div>
                 <div class="card-body">
                     <p class="card-text">Derrote feras com seu caçador em Yharnam.</p>
+                    <p>
+                        <ul>
+                            <li><i class="bi bi-trophy-fill" id="platina"> 1</i></li>
+                            <li><i class="bi bi-trophy-fill" id="ouro"> 7</i></li>
+                            <li><i class="bi bi-trophy-fill" id="prata"> 8</i></li>
+                            <li><i class="bi bi-trophy-fill" id="bronze"> 24</i></li>
+                        </ul>
+                        </p>
                     <span class="badge text-bg-warning">R$ 99,99</span>
                     <p class="card-text">Edição Standard</p>
                 </div>
@@ -205,7 +296,7 @@
         </div>
     </div>
 
-<script src="./js/crud.js"></script>
+    <script src="./js/crud.js"></script>
 
 </body>
 
