@@ -1,11 +1,11 @@
 document.querySelector("#filtrar_naoconquistados").addEventListener("click", () => {
-    let jogosConquistados = jogos.filter(jogo => !jogo.conquistado)
-    filtrar(jogosConquistados)
+    let jogosFiltrados = jogos.filter(jogo => !jogo.conquistado)
+    filtrar(jogosFiltrados)
 })
 
 document.querySelector("#filtrar_conquistados").addEventListener("click", () => {
-    let jogosConquistados = jogos.filter(jogo => jogo.conquistado)
-    filtrar(jogosConquistados)
+    let jogosFiltrados = jogos.filter(jogo => jogo.conquistado)
+    filtrar(jogosFiltrados)
 })
 
 document.querySelector("#buscar").addEventListener("keyup", () => {
