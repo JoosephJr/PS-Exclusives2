@@ -26,35 +26,19 @@
             padding: 0%;
         }
 
-        #jogo-1 {
-            background-image: url('../assets/images/ellie-2.jpg');
-        }
-
-        #jogo-2 {
-            background-image: url('../assets/images/Kratos.jpg');
-        }
-
-        #jogo-3 {
-            background-image: url('../assets/images/Jin-Sakai.jpg');
-        }
-
-        #jogo-4 {
-            background-image: url('../assets/images/aloy2.jpg');
-        }
-
-        #platina{
+        #platina {
             color: #66e8ff;
         }
 
-        #ouro{
+        #ouro {
             color: gold;
         }
 
-        #prata{
+        #prata {
             color: silver;
         }
 
-        #bronze{
+        #bronze {
             color: rgb(223, 158, 73);
         }
     </style>
@@ -81,19 +65,24 @@
                             Jogos
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Exclusivos</a></li>
-                            <li><a class="dropdown-item" href="#">Ex-Exclusivos</a></li>
+                            <li><a id="filtrar_naoconquistados" class="dropdown-item" href="#">Não Conquistados</a></li>
+                            <li><a id="filtrar_conquistados" class="dropdown-item" href="#">Conquistados</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Cadastrar</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Cadastrar</a></li>
                         </ul>
                     </li>
 
                 </ul>
+                <h3>
+                    <span id="pontos" class="badge bg-secondary me-3"></span>
+                </h3>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Filtrar" aria-label="filtrar">
-                    <button class="btn btn-secondary" type="submit">Buscar</button>
+                    <input id="buscar" class="form-control me-2" type="search" placeholder="Filtrar"
+                        aria-label="filtrar">
+                    <button class="btn btn-secondary" type="submit">Filtrar</button>
                 </form>
             </div>
         </div>
@@ -108,147 +97,12 @@
 
         <!-- <div class="row mx-auto my-2 g-3">-->
         <div id="jogos" class="row mx-auto my-2 g-3">
-            <div class="card col-lg-3 col-md-6 col-sm-12 text-bg-dark p-3" id="jogo-1">
-
-                <div class="card-header" id="titulo-jogo">
-                    The Last of Us - Part II
-                </div>
-                <div class="card-body">
-                    <p class="card-text">Viva a jornada de vingança de Ellie Williams.</p>
-                    <p>
-                    <ul>
-                        <li><i class="bi bi-trophy-fill" id="platina"> 1</i></li>
-                        <li><i class="bi bi-trophy-fill" id="ouro"> 7</i></li>
-                        <li><i class="bi bi-trophy-fill" id="prata"> 8</i></li>
-                        <li><i class="bi bi-trophy-fill" id="bronze"> 10</i></li>
-                    </ul>
-                    </p>
-                    <span class="badge text-bg-warning">R$ 299,99</span>
-                    <p class="card-text">Edição Standard</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-success" title="Adicionar ao carrinho">
-                        <i class="bi bi-check2"></i>
-                    </a>
-                    <a href="#" class="btn btn-danger" title="Remover">
-                        <i class="bi bi-x"></i>
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="card col-lg-3 col-md-6 col-sm-12 text-bg-dark p-3" id="jogo-2">
-                <div class="card-header" id="titulo-jogo">
-                    God of War Ragnarok
-                </div>
-                <div class="card-body">
-                    <p class="card-text">Viva a aventura de Kratos e Atreus na mitologia nórdica.</p>
-                    <p>
-                        <ul>
-                            <li><i class="bi bi-trophy-fill" id="platina"> 1</i></li>
-                            <li><i class="bi bi-trophy-fill" id="ouro"> 4</i></li>
-                            <li><i class="bi bi-trophy-fill" id="prata"> 15</i></li>
-                            <li><i class="bi bi-trophy-fill" id="bronze"> 16</i></li>
-                        </ul>
-                        </p>
-                    <span class="badge text-bg-warning">R$ 350,00</span>
-                    <p class="card-text">Edição Deluxe</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-success" title="Adicionar ao carrinho">
-                        <i class="bi bi-check2"></i>
-                    </a>
-                    <a href="#" class="btn btn-danger" title="Remover">
-                        <i class="bi bi-x"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="card col-lg-3 col-md-6 col-sm-12 text-bg-dark p-3" id="jogo-3">
-                <div class="card-header" id="titulo-jogo">
-                    Ghost of Tsushima
-                </div>
-                <div class="card-body">
-                    <p class="card-text">Explore a Ilha de Tsushima com o samurai Jin Sakai.</p>
-                    <p>
-                        <ul>
-                            <li><i class="bi bi-trophy-fill" id="platina"> 1</i></li>
-                            <li><i class="bi bi-trophy-fill" id="ouro"> 4</i></li>
-                            <li><i class="bi bi-trophy-fill" id="prata"> 13</i></li>
-                            <li><i class="bi bi-trophy-fill" id="bronze"> 59</i></li>
-                        </ul>
-                        </p>
-                    <span class="badge text-bg-warning">R$ 99,99</span>
-                    <p class="card-text">Edição do Diretor</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-success" title="Adicionar ao carrinho">
-                        <i class="bi bi-check2"></i>
-                    </a>
-                    <a href="#" class="btn btn-danger" title="Remover">
-                        <i class="bi bi-x"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="card col-lg-3 col-md-6 col-sm-12 text-bg-dark p-3" id="jogo-4">
-                <div class="card-header" id="titulo-jogo">
-                    Horizon Forbidden West
-                </div>
-                <div class="card-body">
-                    <p class="card-text">Explore o Oeste Proibido com Aloy para impedir novas ameaças misteriosas.</p>
-                    <p>
-                        <ul>
-                            <li><i class="bi bi-trophy-fill" id="platina"> 1</i></li>
-                            <li><i class="bi bi-trophy-fill" id="ouro"> 2</i></li>
-                            <li><i class="bi bi-trophy-fill" id="prata"> 10</i></li>
-                            <li><i class="bi bi-trophy-fill" id="bronze"> 67</i></li>
-                        </ul>
-                        </p>
-                    <span class="badge text-bg-warning">R$ 149,99</span>
-                    <p class="card-text">Edição Standard</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-success" title="Adicionar ao carrinho">
-                        <i class="bi bi-check2"></i>
-                    </a>
-                    <a href="#" class="btn btn-danger" title="Remover">
-                        <i class="bi bi-x"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="card col-lg-3 col-md-6 col-sm-12 text-bg-dark p-3" id="jogo-5" style="background-image: url(https://cdn.shopify.com/s/files/1/0498/3249/3214/products/product-image-1867828060_1024x1024.jpg?v=1647442611);">
-                <div class="card-header" id="titulo-jogo">
-                    Bloodborne
-                </div>
-                <div class="card-body">
-                    <p class="card-text">Derrote feras com seu caçador em Yharnam.</p>
-                    <p>
-                        <ul>
-                            <li><i class="bi bi-trophy-fill" id="platina"> 1</i></li>
-                            <li><i class="bi bi-trophy-fill" id="ouro"> 7</i></li>
-                            <li><i class="bi bi-trophy-fill" id="prata"> 8</i></li>
-                            <li><i class="bi bi-trophy-fill" id="bronze"> 24</i></li>
-                        </ul>
-                        </p>
-                    <span class="badge text-bg-warning">R$ 99,99</span>
-                    <p class="card-text">Edição Standard</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-success" title="Adicionar ao carrinho">
-                        <i class="bi bi-check2"></i>
-                    </a>
-                    <a href="#" class="btn btn-danger" title="Remover">
-                        <i class="bi bi-x"></i>
-                    </a>
-                </div>
-            </div>
         </div>
     </main>
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-theme="dark">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-bs-theme="dark">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -264,25 +118,31 @@
                         </div>
 
                         <div class="col-12">
-                            <input id="descricao" type="text" class="form-control" placeholder="Descrição" aria-label="Descrição">
+                            <input id="descricao" type="text" class="form-control" placeholder="Descrição"
+                                aria-label="Descrição">
                         </div>
 
                         <div class="col-12">
-                            <input id="bg-image" type="text" class="form-control" placeholder="Imagem de Fundo" aria-label="Imagem de Fundo">
+                            <input id="bg-image" type="text" class="form-control" placeholder="Imagem de Fundo"
+                                aria-label="Imagem de Fundo">
                         </div>
 
                         <div class="col-3">
-                            <input id="tf-platina" type="number" min="0" max="1" class="form-control" placeholder="Platina" aria-label="Platina">
+                            <input id="tf-platina" type="number" min="0" max="1" class="form-control"
+                                placeholder="Platina" aria-label="Platina">
                         </div>
                         <div class="col-3">
-                            <input id="tf-ouro" type="number" min="0" max="100" class="form-control" placeholder="Ouro" aria-label="Ouro">
+                            <input id="tf-ouro" type="number" min="0" max="100" class="form-control" placeholder="Ouro"
+                                aria-label="Ouro">
                         </div>
                         <div class="col-3">
-                            <input id="tf-prata" type="number" min="0" max="100" class="form-control" placeholder="Prata" aria-label="Prata">
+                            <input id="tf-prata" type="number" min="0" max="100" class="form-control"
+                                placeholder="Prata" aria-label="Prata">
                         </div>
                         <div class="col-3">
-                            <input id="tf-bronze" type="number" min="0" max="100" class="form-control" placeholder="Bronze" aria-label="Bronze">
-                        </div>  
+                            <input id="tf-bronze" type="number" min="0" max="100" class="form-control"
+                                placeholder="Bronze" aria-label="Bronze">
+                        </div>
                         <div class="col-12">
                             <input id="valor" type="number" class="form-control" placeholder="Valor" aria-label="Valor">
                         </div>
